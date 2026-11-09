@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Event Registration</title>
+</head>
+<body>
+    <h2>Event Registration Form</h2>
+
+    <form onsubmit="return register()">
+        Name:
+        <input type="text" id="name" required>
+        <br><br>
+
+        Email:
+        <input type="email" id="email" required>
+        <br><br>
+
+        Phone:
+        <input type="tel" id="phone"
+               pattern="[0-9]{10}" required>
+        <br><br>
+
+        Event:
+        <select id="event" required>
+            <option value="">Select Event</option>
+            <option>Workshop</option>
+            <option>Seminar</option>
+            <option>Conference</option>
+        </select>
+        <br><br>
+
+        <button type="submit">Register</button>
+    </form>
+
+    <script>
+        function register() {
+            alert("Registration Successful!");
+            return false;
+        }
+    </script>
+</body>
+</html>
